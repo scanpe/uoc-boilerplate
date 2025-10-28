@@ -122,7 +122,7 @@
         </a>
 
         <a href="#" class="places__section places__section--gastronomia">
-          <p class="places__extra">Gastronomía Local</p>
+          <p class="places__extra">Gastronomía local</p>
         </a>
 
       </div>
@@ -140,9 +140,10 @@
         principio de la Av. de la Trinidad. Los accesos al casco de la ciudad en tranvía pueden hacerse mediante la parada Padre Anchieta, situada 
         en la avenida de Ángel Guimerá, en el Intercambiador de Transportes.</p>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36037.76169772094!2d-16.326229379169774!3d28.47303266417764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cdeccdcfeaf5%3A0x54a9fe4642667870!2sLa%20Laguna%2C%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1761596669570!5m2!1ses!2ses" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-
+      <div class="transport__mapa-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36037.76169772094!2d-16.326229379169774!3d28.47303266417764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cdeccdcfeaf5%3A0x54a9fe4642667870!2sLa%20Laguna%2C%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1761596669570!5m2!1ses!2ses" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+      </div>
     </section>
 
     <section id="info" class="info">
@@ -152,7 +153,9 @@
           históricos, así como descubrir la costa con piscinas naturales y pueblos pintorescos que ofrece el municipio.</p>
     </section>
 
-    <button><a href="mailto:">Contáctanos</a></button>
+    <button class="contacto">
+      Contáctanos <i class="fa-regular fa-envelope"></i>
+    </button>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

@@ -1,4 +1,6 @@
+// -----------------------------
 // Variables globales
+// -----------------------------
 $color-primary: #00796b;
 $color-secondary: #ffb300;
 $color-background: #f5f5f5;
@@ -6,3 +8,17 @@ $color-text: #333333;
 
 $font-title: 'Playfair Display', serif;
 $font-body: 'Open Sans', sans-serif;
+
+
+// -----------------------------
+// Función personalizada sass (color según contraste)
+// -----------------------------
+
+@use "sass:color"; 
+@function contrast-color($color) {
+  @if (color.channel($color, "lightness", $space: hsl) > 50%) { //así pq con (color.lightness($color) > 50%) me saltaba la DEPRECATION WARNING al hacer build
+    @return $color-text; //si es claro, devuelve color-text (letra oscura)
+  } @else {
+    @return $color-background; //si es oscuo, devuelve la clara
+  }
+}

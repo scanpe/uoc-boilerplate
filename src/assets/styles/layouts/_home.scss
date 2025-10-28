@@ -1,4 +1,4 @@
-@import "../variables";
+@use "../variables" as *;
 
 // -----------------------------
 // Reset y base
@@ -106,7 +106,7 @@ section {
 
 
 // -----------------------------
-// Imágenes, vídeos y mapa
+// Imágenes, vídeos
 // -----------------------------
 
 figure {
@@ -125,15 +125,31 @@ figcaption {
   margin: 15 30px;
 }
 
-.mapa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  margin-bottom: -40px;
-  padding-top: 40px;
-}
 
+// -----------------------------
+// Mapa
+// -----------------------------
+
+.transport {
+  &__mapa-container {
+    position: relative;
+    max-width: 800px; //no tan grande en desktop
+    padding-bottom: 40%;
+    margin: 75px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}
 
 
 // -----------------------------
@@ -181,8 +197,10 @@ figcaption {
     transition: background 0.5s ease;
   }
 
+
   &:hover {
     transform: scale(1.06);
+    color: $color-background;
 
     &::before {
       background: rgba(0, 0, 0, 0.6); //oscurece
@@ -193,18 +211,11 @@ figcaption {
     position: relative; //encima
     z-index: 1;
     font-size: 1.1rem;
-    text-shadow: //para que se lea mejor sobra la img
-    2px 2px 4px rgba(0, 0, 0, 0.9),
-    0 0 6px rgba(0, 0, 0, 0.6);  
+    text-shadow: //para q se lea mejor sobre las imágenes
+      2px 2px 4px rgba(0, 0, 0, 0.9),
+      0 0 6px rgba(0, 0, 0, 0.6);
   }
-
-  a {
-    :hover {
-    color: inherit; //para que no me de fallo arriba y no cambie
-    }
-  } 
 }
-
 
 // -----------------------------
 // Imágenes de fondo
@@ -240,7 +251,7 @@ figcaption {
 button {
   background-color: $color-primary;
   color: white;
-  border: none;
+  border: 2px solid $color-primary;
   border-radius: 100px;
   padding: 15px 20px;
   font-weight: 600;
@@ -248,9 +259,16 @@ button {
   transition: 0.5s;
   display: block; 
   margin: 40px auto;
+  text-decoration: none;
+  
+  i {
+  margin-left: 8px;
+  }
+
 
   &:hover {
-    background-color: $color-text;
+    background-color: $color-background;
+    color: contrast-color($color-background); //se cambia el color si el fondo se hace muy claro con la fnción hecha! 
     transform: scale(1.06);
   }
 }
@@ -267,4 +285,8 @@ button {
   margin-top: 120px;
   text-align: center;
   font-size: 0.9rem;
+
+  .footer__social a {
+    text-decoration: none;
+  }
 }
