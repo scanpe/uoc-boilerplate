@@ -1,27 +1,161 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
+    <meta lang="es">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Visita La Laguna</title>
   </head>
+  
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#history" class="header__link">Historia</a>
+        <a href="#places" class="header__link">Lugares de interés</a>
+        <a href="#transport" class="header__link">Transporte</a>
+        <a href="#info" class="header__link">Información</a>
+      </nav>
+
+      <div class="welcome">
+        <h1 class="welcome__title">Descubre San Cristóbal de La Laguna</h1>
+        <p class="welcome__subtitle">Historia, cultura y naturaleza en Tenerife</p>
+      </div>
+    </header>
+
+    <section id="history" class="history">
+      <h2 class="history__title">Un poco de historia</h2>
+      <p class="history__text">El Municipio de San Cristóbal de La Laguna ocupa una superficie de 102,93 kms2. La Ciudad fue fundada en el siglo XV 
+        y hasta el siglo XIX fue la capital de la Isla de Tenerife. <br>
+        La Ciudad ocupa la zona central del Municipio, que limita con Santa Cruz de Tenerife, Tacoronte, El Rosario y Tegueste, además de con el mar 
+        en su vertiente Norte.</p>
+
+      <p class="history__text">Originariamente, la zona recibió el nombre de Aguere, vocablo derivado de los dialectos bereberes hablados por los aborígenes 
+        canarios, que significa: laguna. Así la localidad recibe su actual denominación precisamente por la existencia de una laguna formada por el 
+        afloramiento de aguas subterráneas debido a la superación del nivel frático. Esta laguna fue drenada progresivamente hasta desaparecer en el 
+        siglo XIX, posibilitando la ampliación del área rural, y más recientemente de la Urbana.</p>
+
+      <p class="history__text">San Cristóbal de la Laguna fue fundada en 1497 por Alfonso Fernández de Lugo. La última ciudad se establece en las Islas Canarias 
+        (primer territorio de ultramar de España) y saca su nombre de un lago poco profundo o de una zona pantanosa (La laguna) drenada en 1837.<br>
+        Los primeros Colonos, la mayoría soldados, no recibieron ninguna parcela definida: La zona urbana no fortificada fue considerada como un espacio 
+        público en el que cada uno podía construir. Fueron construidas pequeñas casas alrededor de la Iglesia de la Concepción, en el mayor desorden, sin 
+        plano general, en la ciudad alta (Villa de Arriba). Esta situación fue regularizada en 1502 en un plano basado en los planos que Leonardo Da Vinci 
+        había realizado para la ciudad de Imole, y que fue adaptado por el gobernante (Adelantado) para la zona comprendida entre su residencia oficial y 
+        la Iglesia. Largas calles principales (Calles Reales) enlazaban espacios públicos abiertos y formaban una cuadrícula sobre la que se insertaban las 
+        calles más pequeñas.<br>
+
+        La ciudad baja así creada (Villa de Abajo) se extendió rápidamente, atrayendo a las clases dirigentes de la isla y en 1515 ya contaba con más de 
+        mil habitantes. Las comunidades monásticas comenzaron a construir en el S. XVI la Iglesia de Nuestra Señora de los Remedios (1511), la Ermita de 
+        San Miguel (1506), los hospicios de San Sebastián (1506) y los Dolores (1515).</p>
+
+      <figure>
+        <img class="imagen" src="../src/assets/images/mapa3D.jpg"
+        alt="Mapa 3D histórico con estilo dibujado del centro edificado de San Cristobal de La Laguna"
+        height="300"/>
+
+        <figcaption>
+          Mapa histórico del casco central de San Cristobal de La Laguna
+        </figcaption>
+      </figure>
+      
+      <p class="history__text">San Cristóbal conservó esta posición política, religiosa y comercial dominante durante los siglos XVII y XVIII. La prosperidad obtenida se refleja 
+        en los edificios construidos en esta época.
+        El centro económico y político fue traspasado en este tiempo a Santa Cruz en el S. XVIII, provocando el declive de San Cristóbal que conservó 
+        únicamente un papel religioso y cultural. Una renovación política, fue causa de la instalación en San Cristóbal de la sede de la Corte Suprema 
+        (Junta Suprema) de las Islas Canarias en 1808, que terminó bruscamente cinco años más tarde, cuando este cuerpo tuvo desavenencias con el Parlamento 
+        Provincial (Diputación Provincial) instalado en Santa Cruz de Tenerife y fue disuelto.</p>
+
+
+      <h3 class="history__second-title">Población actual</h3>
+      <p class="history__text">La Laguna tiene una población de 159.034 personas (2023), con una densidad de 1.533,23 hab/km2 
+        [actualización a la población de 2023]. Es el tercer municipio más poblado de Canarias, tras Las Palmas de Gran Canaria y Santa Cruz de Tenerife. 
+        Estas cifras caracterizan a la Ciudad como área de dimensión media bajo los criterios de la Unión Europea.</p>
+
+
+      <figure class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rmry9GXEl7Y?si=Lw20dg1AFy6x1Mtz&amp;start=11" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <figcaption>
+          Video promocional para la Concejalía de Turismo del Ayuntamiento de San Cristóbal de La Laguna
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="places" class="places">
+      <h2 class="places__title">Adéntrate en sus calles</h2>
+      <p class="places__text">Formar parte del listado de ciudades Patrimonio de la Humanidad es un privilegio, y San Cristóbal de La Laguna tiene el 
+        gran honor de ser parte de ello. Las calles y casas que componen la ciudad, son el ejemplo de una planificación urbana innovadora, 
+        compuesta por edificios históricos únicos declarados Bienes de Interés Cultural.</p>
+        
+      <p class="places__text"> La Ciudad de La Laguna ha sido reconocida por ser pionera en la concepción de su planeamiento como influencia sobre 
+        el desarrollo urbanístico en Latinoamérica. Es el primer ejemplo de ciudad no fortificada de su época. Su espacio ordenado según un nuevo 
+        orden social marcado por una concepción de vida pacífica y la facilidad de acceso para el fomento de las relaciones comerciales, propio de 
+        los valores del Renacimiento.<br>
+        Esta circunstancia y el diseño y funcionalidad de sus edificaciónes llevaron el 12 de diciembre de 1999, a que el Comité de Patrimonio Munical 
+        (<abbr title="Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura">UNESCO</abbr>) concediese a la Ciudad el título de Patrimonio de la Humanidad.</p>
+
+      <h3 class="places__second-title">Descubre sus lugares:</h3>
+
+      <div class="places__grid">
+
+        <a href="#" class="places__section places__section--arqueologicos">
+          <p class="places__extra">Monumentos arqueológicos</p>
+        </a>
+
+        <a href="#" class="places__section places__section--patrimonio">
+          <p class="places__extra">Patrimonio arquitectónico e histórico</p>
+        </a>
+
+        <a href="#" class="places__section places__section--museos">
+          <p class="places__extra">Museos, espacios culturales y artísticos</p>
+        </a>
+
+        <a href="#" class="places__section places__section--naturaleza">
+          <p class="places__extra">Naturaleza</p>
+        </a>
+
+        <a href="#" class="places__section places__section--calle">
+          <p class="places__extra">Comercio local</p>
+        </a>
+
+        <a href="#" class="places__section places__section--gastronomia">
+          <p class="places__extra">Gastronomía Local</p>
+        </a>
+
+      </div>
+    </section>
+
+
+    <section id="transport" class="transport">
+      <h2 class="transport__title">Cómo moverte</h2>
+      <h3 class="transport__second-title">Transporte público</h3>
+      <p class="transport__text">Los servicios de transporte de viajeros los cubre la compañía <a href="https://titsa.com/index.php"> Transportes 
+        Interurbanos de Tenerife TITSA</a> a través de una gran cobertura de servicios urbanos e interurbanos.<br>
+        Además, también presta sus servicios el <a href="https://metrotenerife.com/">Tranvía Metropolitano de Tenerife</a> con las líneas 1 y 2.</p>
+
+      <p class="transport__text">La nueva estación de guaguas de La Laguna, inaugurada en 2011, se encuentra situada próxima a la autopista, y al 
+        principio de la Av. de la Trinidad. Los accesos al casco de la ciudad en tranvía pueden hacerse mediante la parada Padre Anchieta, situada 
+        en la avenida de Ángel Guimerá, en el Intercambiador de Transportes.</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36037.76169772094!2d-16.326229379169774!3d28.47303266417764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cdeccdcfeaf5%3A0x54a9fe4642667870!2sLa%20Laguna%2C%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1761596669570!5m2!1ses!2ses" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+
+    </section>
+
+    <section id="info" class="info">
+        <h2 class="info__title">Información</h2>
+        <p class="info__text">En la pagina web oficial de turismo del ayuntamiento de <a href="https://turismo.aytolalaguna.es/"> La Laguna</a> el visitante puede encontrar 
+          información relevante, tanto histórica como de actualidad, para conocer mejor esta ciudad Patrimonio de la Humanidad, sus monumentos y edificios 
+          históricos, así como descubrir la costa con piscinas naturales y pueblos pintorescos que ofrece el municipio.</p>
+    </section>
+
+    <button><a href="mailto:">Contáctanos</a></button>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
   </body>
 </html>
